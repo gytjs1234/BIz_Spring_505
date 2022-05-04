@@ -1,4 +1,4 @@
-# Spring Nybatis Project
+# Spring Mybatis Project
 * SpringMVC Project 와 Orale ,MYSQL등 DBMS와 연동하는 Project
 
 ## Depedency 설정
