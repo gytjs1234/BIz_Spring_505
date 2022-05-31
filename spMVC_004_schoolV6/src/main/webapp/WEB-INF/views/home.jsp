@@ -115,6 +115,11 @@ button{
 	background-color: orange;
 	color: white;
 	}
+	
+	article .st-list{
+	overflow: auto;
+	max-height: 10vh;
+	}
 </style>
 <script>
 	const rootPath = "${rootPath}"
@@ -139,7 +144,7 @@ button{
 		<c:choose>
 
 			<c:when test="${LAYOUT== 'ST_LIST'}">
-				<article>
+				<article class="st-list">
 					<%@ include file="/WEB-INF/views/Student/list.jsp"%>
 				</article>
 			</c:when>
@@ -149,7 +154,9 @@ button{
 				</article>
 			</c:when>
 			<c:otherwise>
-				<article></article>
+				<article>
+				<%@ include file="/WEB-INF/views/Student/list.jsp"%>
+				</article>
 				<article></article>
 				<article></article>
 
