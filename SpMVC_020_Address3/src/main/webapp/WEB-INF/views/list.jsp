@@ -101,7 +101,7 @@ padding: 2px;
 border-radius: 3px;
 background-color: black;
 color: white;
-margin-right: 50px;
+margin-right: 0 50px;
 
 
 
@@ -127,7 +127,7 @@ color: black;
 	</div>
 	<br>
 	<div class="w3-container">
-	<table  class="w3-table w3-table-all" >
+	<table  class="w3-table w3-table-all list " >
 		<thead>
 			<tr>
 				<th>번호</th>
@@ -141,7 +141,7 @@ color: black;
 			<c:set var="INDEX" value="1"></c:set>
 			<c:forEach items="${ADDRS}" var="ADDR" varStatus="INDEX">
 
-				<tr>
+				<tr data-seq="${ADDR.a_seq}">
 					<td><a href="${rootPath}/detail?seq=${ADDR.a_seq}">${INDEX.count}</a></td>
 					<td><a href="${rootPath}/detail?seq=${ADDR.a_seq}">${ADDR.a_name}</a></td>
 					<td>${ADDR.a_tel}</td>

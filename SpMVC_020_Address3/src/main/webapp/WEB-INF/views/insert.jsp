@@ -16,5 +16,5 @@
 	 
 	 <input  class="b_addr" name="a_address" placeholder="주소" value="${ADDR.a_address}" />
 	 
-	<button class="sub">저장</button>
+	<button class="sub" type="button">저장</button>
 </form>

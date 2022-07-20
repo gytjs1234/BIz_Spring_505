@@ -45,7 +45,6 @@ public class HomeController {
 
 	@RequestMapping(value = "/", method = RequestMethod.POST)
 	public String home(AddressVO addr) {
-		log.debug("받은 데이터 {}", addr.toString());
 		addrService.insert(addr);
 		return "redirect:/";
 	}

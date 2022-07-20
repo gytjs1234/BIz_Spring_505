@@ -12,6 +12,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <title>home</title>
+<script>
+	// js 파일에서 rootPath 을 
+	// 사용할수 있도록 미리 JS 변수로 선언
+	const rootPath = "${rootPath}"
+</script>
+<script src="${rootPath}/static/js/detail.js?ver=2022-07-20-002"></script>
 
 </head>
 <style>
